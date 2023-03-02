@@ -1,0 +1,296 @@
+@media ( max-width: 1200px )
+	.menu
+		.menu_item 
+			padding-right: 13px
+		.menu_link
+			font-size: 14px 
+	.subheader 
+		.subheader_number
+			font-size: 18px
+	.reasons
+		.reason_type
+			margin-top: 36px
+		
+		.col-md-9
+			align-self: start			
+		.offset-lg-2
+			margin-left: 14.66%
+	.car
+		padding: 57px 190px 138px 130px	
+		.rectangle
+			position: relative 
+			right: 123px
+		&_mbheader
+			position: relative 
+			right: 123px
+		&_subheadder
+			position: relative 
+			right: 123px
+		&_img
+			img
+				position: relative 
+				right: 123px
+		&_text
+			position: relative  
+			right: 123px			
+	.mobile
+		&_type
+			width: 300px
+	.end
+		&_block>div
+			width: 45%		
+@media ( max-width: 991px )
+	.menu
+		.menu_item 
+			padding-right: 8px
+		.menu_link
+			font-size: 10px 
+	.subheader 
+		&_number
+			font-size: 18px
+		&_logo
+			img
+				width: 100%	
+		.subheader_text
+			font-size: 12px	
+		.subheader_text_two
+			margin-top: 66px
+	.background
+		.subheader_text
+			font-size: 25px	
+	.reasons
+		.reason_subheader
+			font-size: 28px
+		.col-md-6
+			flex-direction: column
+			align-items: center
+		.reason_text	
+			margin: 23px 0 0px 9px
+			width: 100%
+		.col-md-9
+			width: 100%
+	.mobile
+		&_type 
+			width: 231px
+			height: 253px
+		.mobile_text
+			font-size: 17px
+		.mobile_plus
+			top: 186px
+	.end
+		.end_block
+			.end_block_links
+				width: 286px
+			.block_mobile
+				width: 223px
+				img
+					height: 20px
+					width: 68px
+@media ( max-width: 767px )
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: space-evenly
+		top:0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px	
+		background-color: rgba(0,0,0,0.8  )
+		transition:0.6s all
+		&_active
+			left:0
+			transition:0.6s all
+		.menu_item
+			border-right: none
+		.menu_link
+			font-size: 22px	
+	.burger
+		display: block
+		width: 35px
+		height: 12px
+		position: absolute
+		right: 10px
+		top:50%
+		transform: translateY(-50%)
+		span
+			display: block
+			position: relative
+			height: 2px
+			width: 100%
+			margin-bottom: 2px
+			background-color: #fff
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -1px
+				&:nth-child(1)
+					transform: translateY(4px) rotate(-45deg ) 
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(4px) rotate(45deg) 
+	.subheader
+		.logo_mobile 
+			display: none
+		&_arct
+			display: none
+		.mobile_screen
+			color: #ffffff 
+			display: block 
+			position: relative
+			left:20%
+			transform: translateY(-50%)
+			font-size: 22px 
+			font-weight: 400 
+			font-style: normal 
+			letter-spacing: normal 
+			text-align: center 
+			text-align: left 
+			margin-top: 74px 
+			text-decoration: none
+		.subheader_btn
+			margin-top: 26px	
+			position: relative
+			left:18%
+			transform: translateY(-50%)
+	.background
+		.subheader_text
+			font-size: 22px			
+	.reasons
+		.reason_subheader
+			font-size: 22px
+	.car
+		min-height: 781px
+		.car_img
+			width: 499px
+			height: 333px
+			margin: 0 auto
+			margin-top: 40px
+			img
+				width: 517px
+
+		.car_mbheader
+			font-size: 34px
+	.end
+		.end_block
+			&>div
+				width: 70%
+				
+			&_social
+				display: none
+			.end_block_links
+				display: flex
+				height: 8px
+				width: 385px
+				position: relative
+				top: -170%
+			.block_mobile
+				display: none
+		.end_secblock
+			display: block
+			.end_block_social
+				display: flex
+				margin: auto
+				margin-top: 8px
+			.block_mobile
+				display: flex
+				justify-content: center
+				margin-top: 8px
+
+@media ( max-width: 540px )
+	header
+		nav
+			max-width: 575px
+	.menu
+		max-width: 300px		
+			
+	.subheader
+		.subheader_logo
+			width: 57%
+		.subheader_btn
+			display: none
+		.btn_none
+			display: none	
+	.background
+		.main_header
+			font-size: 61px
+		.subheader_text
+			font-size: 39px
+			margin-top: 46px	
+		.main_text
+			display: none
+	.reasons
+		.rectangle
+			margin: 0
+			left: 220px
+			margin-top: 15px
+		.row-cols-2
+			flex-direction: column
+		.offset-lg-2
+			margin-left: 0.66%
+		.reason_subheader
+			font-size: 51px
+			text-align: center
+		span
+			text-align: center
+			display: block
+			margin-bottom: -23px
+		.reason_text
+			font-size: 32px	
+			line-height: 37px
+			margin-left: 43px
+		.reason_type
+			width: 155px
+			height: 155px	
+			.reason_img
+				width: 60%
+	.mobile
+		.rectangle
+			display: none
+		.reason_mbheader
+			display: block	
+			max-width: 575px
+		.row
+			flex-direction: column	
+			max-width: 575px
+		.mobile_subheadder
+			max-width: 575px		
+	.car
+		.rectangle_white
+			display: none
+		.car_mbheader
+			max-width: 575px
+		.car_subheadder
+			max-width: 575px
+		.car_img
+			display: none
+		.car_text
+			max-width: 575px
+	.requirements
+		.rectangle
+			display: none
+		.requirements_mbheader
+			max-width: 575px
+		.row
+			flex-direction: column
+	.map
+		.rectangle_white
+			display: none
+		.map_mbheader
+			max-width: 575px
+		.map_subheader
+			max-width: 575px
+		.map_world
+			max-width: 575px			
+
+
+
+			
+
+
+
+
+		
+
+	

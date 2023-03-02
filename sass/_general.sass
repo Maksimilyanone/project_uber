@@ -1,0 +1,579 @@
+header 
+	position: relative 
+.container 
+	width: 1140px 
+	margin: 0 auto 
+nav 
+	height: 50px 
+	background-color: #212121 
+	position: fixed 
+	width: 100% 
+	z-index: 1000 
+.menu 
+	padding: 13px 70px 
+	margin: 0 
+	list-style: none 
+	display: flex 
+	justify-content: space-around 
+	list-style-type: none 
+	.menu_link 
+		color: #ffffff 
+		font-size: 15px 
+		font-weight: 300 
+		font-style: normal 
+		letter-spacing: normal 
+		text-align: left 
+		text-decoration: none 
+		@include a_underline
+	.menu_item 
+		border-right: 2px dotted black 
+		padding-right: 23px 
+		&:last-child
+			border-right: none
+.subheader 
+	position: absolute 
+	width: 100% 
+	height: 144px 
+	background-color: rgba(0, 0,0, 0.6) 
+	.subheader_logo 
+		max-width: 100% 
+		display: block 
+		margin-top: 66px 
+	.subheader_arct 
+		color: white 
+		font-size: 13px 
+		font-weight: 400 
+		margin-top: 5px 
+		margin-bottom: 16px 
+	.subheader_text_two 
+		color: #ffffff 
+		font-size: 12px 
+		font-weight: 300 
+		font-style: normal 
+		letter-spacing: normal 
+		text-align: left 
+		margin-top: 69px 
+	.subheader_number 
+		color: #ffffff 
+		display: block 
+		font-size: 22px 
+		font-weight: 400 
+		font-style: normal 
+		letter-spacing: normal 
+		text-align: center 
+		text-align: left 
+		line-height: 12px 
+		margin-top: 8px 
+		text-decoration: none
+		@include a_underline
+	.subheader_btn 
+		width: 172px 
+		height: 46px 
+		box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.12) 
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%) 
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+		border-radius: 4px 
+		color: #ffffff 
+		font-size: 14px 
+		font-weight: 400 
+		font-style: normal 
+		letter-spacing: normal 
+		text-align: center 
+		text-transform: uppercase 
+		margin-top: 68px 
+		@include btn
+	.mobile_screen
+		display: none	
+		
+		
+			
+.background 
+	min-height: 799px 
+	background: url('../img/bg/main_bg.jpg') center center / cover no-repeat 
+	padding: 200px 0 135px 0 
+	.main_header 
+		color: #ffffff 
+		font-weight: 700 
+		font-style: normal 
+		letter-spacing: normal 
+		line-height: normal 
+		text-align: center 
+		text-transform: uppercase 
+		margin: 0 
+	.subheader_text 
+		color: #ffffff 
+		font-weight: 400 
+		font-style: normal 
+		letter-spacing: normal 
+		text-align: center 
+		margin: 0 
+	.main_text 
+		margin: 0 
+		color: #ffffff 
+		font-size: 18px 
+		font-weight: 400 
+		font-style: normal 
+		letter-spacing: normal 
+		line-height: 24px 
+		margin-top: 23px 
+		text-align: center 
+	.bg_btn 
+		display: block 
+		width: 259px 
+		height: 63px 
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12) 
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%) 
+		border-radius: 4px 
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+		color: #ffffff 
+		font-size: 18px 
+		font-weight: 400 
+		font-style: normal 
+		letter-spacing: normal 
+		text-align: center 
+		text-transform: uppercase 
+		margin: 0 auto 
+		margin-top: 118px 
+		@include btn
+.reasons 
+	min-height: 890px 
+	.rectangle
+		position: relative
+		margin: 0 auto
+		height: 24px
+		width: 112px
+		padding: 5px 12px
+		background-color: #000000
+		color: #ffffff
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+		text-align: center
+		z-index: 2
+		margin-top: 20px
+		&_white 
+			background-color: #fff
+			color: #000
+			font-size: 11px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+			text-align: center
+			text-transform: uppercase	
+		&_min 
+			width: 76px
+	.reason_subheader 
+		color: #222222 
+		font-size: 38px 
+		font-weight: 700 
+		font-style: normal 
+		letter-spacing: normal 
+		text-transform: uppercase 
+		margin: 0 
+		margin-top: 38px 
+	.reason_type 
+		display: flex 
+		width: 113px 
+		height: 113px 
+		background-color: #1eacc7 
+		border-radius: 100% 
+		justify-content: center 
+		align-items: center 
+		margin-top: 50px 
+	.col-md-6 
+		display: flex 
+	.col-md-9 
+		display: flex 
+		justify-content: center 
+		align-self: center 
+	.reason_text 
+		color: #202020 
+		font-size: 15px 
+		font-weight: 300 
+		font-style: normal 
+		letter-spacing: normal 
+		line-height: 21px 
+		margin: 40px 0 40px 26px 
+		text-align: left 
+	span 
+		color: #1eacc7 
+		font-weight: 700 
+		font-style: normal 
+		letter-spacing: normal 
+		line-height: normal 
+.mobile
+	min-height: 864px
+	padding: 48px 0 80px 0
+	background: url('../img/bg/mobile_phon.jpg') center center/ cover no-repeat
+	.rectangle
+		position: relative
+		margin: 0 auto
+		height: 24px
+		width: 112px
+		padding: 5px 12px
+		background-color: #000000
+		color: #ffffff
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+		text-align: center
+		z-index: 2
+	.row
+		margin-top: 32px		
+			
+	.reason_mbheader
+		color: #222222 
+		font-size: 38px 
+		font-weight: 700 
+		font-style: normal 
+		letter-spacing: normal 
+		text-transform: uppercase 
+		margin: 0 
+		margin-top: 38px 
+		text-align: center
+		margin-top: 38px
+	&_subheadder
+		color: #222222
+		font-size: 17px
+		font-weight: 400
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		margin-top: 19px
+	&_type
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		padding-bottom: 35px
+		&_1
+			background: url('../img/picture/1.png') center center/ cover no-repeat
+		&_2
+			background: url('../img/picture/2.png') center center/ cover no-repeat
+		&_3
+			background: url('../img/picture/3.png') center center/ cover no-repeat
+		&_4
+			background: url('../img/picture/4.png') center center/ cover no-repeat
+		&_5
+			background: url('../img/picture/5.png') center center/ cover no-repeat
+		&_6
+			background: url('../img/picture/6.png') center center/ cover no-repeat
+		.mobile_text
+			color: #ffffff
+			font-size: 24px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+			text-align: center
+			text-transform: uppercase
+		.mobile_plus
+			display: flex
+			justify-content: center
+			align-self: center
+			position: absolute
+			width: 26px
+			height: 26px
+			background-color: #000000
+			border-radius: 100%
+			top: 219px
+			left: 50%
+			transform: translateX(-50%)
+			cursor: pointer
+			&:hover
+					background: white
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				width: 14px
+				height: 2px
+				background: $blue
+				bottom: 50%
+				transform: translateY(15%)
+				transition: 0.5s all
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 2px
+				height: 14px
+				background: $blue
+				bottom: 25%
+				transition: 0.5s all
+			&:hover
+				&:before,&:after
+					background: red			
+.car	
+	min-height: 895px
+	background: url('../img/bg/bg_car.jpg') center center/ cover no-repeat
+	padding: 57px 190px 138px 190px
+	.rectangle
+		position: relative
+		margin: 0 auto
+		height: 24px
+		width: 112px
+		padding: 5px 12px
+		background-color: #ffffff
+		color: #000000
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+		text-align: center
+		z-index: 2
+	&_mbheader
+		color: white
+		font-size: 38px 
+		font-weight: 700 
+		font-style: normal 
+		letter-spacing: normal 
+		text-transform: uppercase 
+		margin: 0 
+		margin-top: 38px 
+		text-align: center
+		margin-top: 32px
+	&_subheadder
+		color: #ffffff
+		font-size: 17px
+		font-weight: 400
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		margin-top: 19px
+	&_img
+		display: block
+		width: 759px
+		height: 480px
+		margin: 0 auto
+		margin-top: 56px
+	&_text
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		font-style: normal
+		letter-spacing: normal
+		text-align: center	
+.requirements
+	padding: 68px 0 84px 0
+	.rectangle
+		position: relative
+		margin: 0 auto
+		height: 24px
+		width: 112px
+		padding: 5px 12px
+		background-color: #000000
+		color: #ffffff
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+		text-align: center
+		z-index: 2
+	&_mbheader
+		color: black
+		font-size: 38px 
+		font-weight: 700 
+		font-style: normal 
+		letter-spacing: normal 
+		text-transform: uppercase 
+		margin: 0 
+		margin-top: 38px 
+		text-align: center
+		margin-top: 32px	
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0
+
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+		font-style: normal
+		letter-spacing: normal
+		line-height: normal
+		
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 20px
+		li
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			color: #222222
+			margin-top: 10px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: -31px
+				top:5%
+				width: 21px
+				height: 20px
+				background: url('../img/icons/check_mark.png') center center/cover no-repeat
+	.warning
+		.requirements_title
+			color: $red
+		.requirements_list
+			li
+				&::before
+					background: url('../img/icons/check_mark_red.png') center center/cover no-repeat				
+.map
+	min-height: 717px
+	background: url('../img/bg/bg_2.jpg') center center/cover no-repeat
+	padding: 49px 0 49px 0
+	.rectangle
+		position: relative
+		margin: 0 auto
+		height: 24px
+		width: 112px
+		padding: 5px 12px
+		background-color: #ffffff
+		color: #000000
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+		text-align: center
+		z-index: 2
+	&_mbheader
+		color: #ffffff
+		font-size: 38px
+		font-weight: 700
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		margin-top: 32px
+	&_subheader
+		color: #ffffff
+		font-size: 17px
+		font-weight: 400
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+	&_world
+		a
+			display: block	
+			color: $blue
+			font-size: 15px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+			text-align: center
+			margin-top: 496px
+			text-decoration: none
+			@include a_underline
+.end
+	min-height: 150px
+	padding: 14px 23px 40px 23px
+	.renc
+		width: 299px
+		height: 4px
+		background-color:$blue
+		margin: 0 auto 
+	&_block
+		display: flex
+		justify-content: space-between
+		margin-top: 32px
+		&>div
+			width: 21%
+			&:nth-child(3)
+				display: flex
+				justify-content: flex-end
+		&_social
+			display: flex
+			width: 153px
+			height: 32px
+			justify-content: space-between
+			align-items: center
+			&_item
+				display: flex
+				width: 32px
+				height: 32px
+				border-radius: 100%
+				background-color: black
+				justify-content: center
+				align-self: center
+				a
+					display: flex
+					justify-content: center
+					align-self: center
+					text-decoration: none
+					color: white
+					&:hover
+						color: red
+						transition: 0.3s all
+		&_links
+			display: flex
+			width: 390px
+			height: 42px
+			justify-content: space-around
+			.head_text
+				display: flex
+				justify-content: center
+				align-self: top
+				a
+					color: $blue
+					font-size: 15px
+					font-weight: 300
+					font-style: normal
+					letter-spacing: normal
+					text-align: left
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+						transition: 0.7s all
+						color: $red	
+		.block_mobile
+			display: flex
+			width: 296px
+			height: 27px	
+			justify-content: space-around
+	.ht
+		display: block
+		width: 390px
+		height: 30px
+		margin: auto
+		.block_uptext
+			display: flex
+			justify-content: space-between
+			align-self: center
+			.sec_text
+				a
+					color: #999999
+					font-size: 11px
+					font-weight: 300
+					font-style: normal
+					letter-spacing: normal
+					text-align: left
+					text-transform: uppercase		
+	.lang
+		text-align: center
+		a
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			font-style: normal
+			letter-spacing: normal
+			text-align: center
+			text-decoration: none
+			&:hover
+				@include a_underline
+				color:$red
+				transition: 0.6s
+	.end_secblock
+		display: flex
+		justify-content: space-between
+		.block_mobile
+			display: flex
+			justify-content: space-between
+			.app
+				margin-right:15px
+
+.burger
+	display: none
+.mobile_screen
+	display: none
+.end
+	.end_secblock
+		display: none	
